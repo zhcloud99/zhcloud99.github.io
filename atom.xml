@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>zhcloud的博客</title>
+  <title>zhcloud</title>
   
-  
+  <subtitle>zh的个人博客</subtitle>
   <link href="https://zhcloud99.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhcloud99.github.io/"/>
-  <updated>2021-03-24T07:35:54.272Z</updated>
+  <updated>2021-03-29T08:55:59.993Z</updated>
   <id>https://zhcloud99.github.io/</id>
   
   <author>
@@ -17,22 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://zhcloud99.github.io/undefined.html"/>
-    <id>https://zhcloud99.github.io/undefined.html</id>
-    <published>2021-03-24T07:35:54.272Z</published>
-    <updated>2021-03-24T07:35:54.272Z</updated>
+    <title>标识符与关键字</title>
+    <link href="https://zhcloud99.github.io/20210329042405.html"/>
+    <id>https://zhcloud99.github.io/20210329042405.html</id>
+    <published>2021-03-29T08:24:05.000Z</published>
+    <updated>2021-03-29T08:55:59.993Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a><strong>标识符</strong></h2><p>&#160; <strong>概念</strong>：    概念：在editplus中显示高亮颜色为黑色的，程序员有自己权力命名的单词为标识符（方法名是规定的除外）。<br>&#160; <strong>标识符举例</strong>：类名、方法名、接口名、变量名、常量名<br>&#160; <strong>命名规则：</strong></p><ul><li>由数字、字母（包括中文）、下划线、$组成，不能由数字开头</li><li> 标识符中不能有空格（编译器在class后寻找标识符，再寻找{}，中间添加了空格如class Hello World{}，只会把类名Hello当作标识符，然后识别不到{}就会报错，无法编译。）</li><li>关键字不可以做标识符</li><li>标识符严格区分大小写（大小写不同），但是对于类名来说，若两个定义了两个类名只是大小写不同，只生成先定义的那个class文件。</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span></span>&#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">a</span></span>&#123;</span><br><span class="line">&#125;                    <span class="comment">//编译时。只生成A.calss</span></span><br></pre></td></tr></table></figure><pre><code class="java">class a&#123;&#125;class A&#123;&#125;                  //编译时只生成a.class</code></pre><p><strong>文件命名问题</strong>：在windos中命名123.java文件是没有问题的，但是编写代码定义public的类就不可以，因为规定public定义的类的类名必须与文件名保持一致，而类名为标识符，不可以以数字开头。</p><h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a><strong>关键字</strong></h2><p>&#160;概念：sun公司开发java语言时，提前定义好的具有特殊含义的单词。<br>&#160;注意：java语言是严格区分大小写的，所有的关键字全部小写。<br>&#160;常用关键字：<br><img src="/20210329042405/clipboard.png"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h2 id=&quot;标识符&quot;&gt;&lt;a href=&quot;#标识符&quot; class=&quot;headerlink&quot; title=&quot;标识符&quot;&gt;&lt;/a&gt;&lt;strong&gt;标识符&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;&amp;#160; &lt;strong&gt;概念&lt;/strong&gt;：    概念：在editplus中显示高亮颜</summary>
       
     
     
     
+    <category term="java基础" scheme="https://zhcloud99.github.io/categories/java%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="java基础" scheme="https://zhcloud99.github.io/tags/java%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
