@@ -90,3 +90,8 @@ img {
     cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
         default;
 }
+
+#recent-posts>.recent-post-item, .layout>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+    /* ���´�����ɫ͸����Ϊ0.3 */
+    background: rgba(255,255,255,.3);
+}
