@@ -5569,4 +5569,4 @@ blockquote.pullquote.right {
 .read-mode #article-container .note .note-icon {
   color: var(--font-color);
 }
-@impott 'web_bg';
+@impott 'web_bg.css';
