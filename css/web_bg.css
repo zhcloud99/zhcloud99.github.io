@@ -1,6 +1,19 @@
 /*����ɫ����*/
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 #web_bg {
-    background: linear-gradient(102.7deg,#fddaff 8.2%,#dfadfc 19.6%,#adcdfc 36.8%,#adfcf4 73.2%,#caf8d0 90.9%);
+    background: linear-gradient(-45deg, #52eeab, #fdeee9, #72c9e8, #3ab3df);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
 }
 /* ������ */
 ::-webkit-scrollbar {
