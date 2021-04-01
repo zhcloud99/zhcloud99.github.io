@@ -6,7 +6,7 @@
   <link href="https://zhcloud99.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhcloud99.github.io/"/>
-  <updated>2021-03-30T09:50:32.880Z</updated>
+  <updated>2021-04-01T02:33:00.736Z</updated>
   <id>https://zhcloud99.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++与Java内存泄露问题</title>
+    <link href="https://zhcloud99.github.io/20210401095655.html"/>
+    <id>https://zhcloud99.github.io/20210401095655.html</id>
+    <published>2021-04-01T01:56:55.000Z</published>
+    <updated>2021-04-01T02:33:00.736Z</updated>
+    
+    <content type="html"><![CDATA[<p>&ensp;&ensp;&ensp;&ensp;因为没有系统的学习过C++，闲来无事与教研室学C++同学的同学简单聊了两句，了解了下C++，又胡思乱想了一些东西。<br>&ensp;&ensp;&ensp;&ensp;C是面向过程的，C++也是封装、继承、多态、面向对象的与Java一样的。只不过C++的同学好像会花大量的时间学习指针的操作，对内存空间进行管理，防止内存泄露等问题。但是像我这种菜鸡Java，好像还没考虑过内存泄露这种事情，毕竟JVM的GC都替我做了，但是还是有必要简单了解下JVM的GC机制<br><a href="https://blog.csdn.net/u012516166/article/details/77014910"><strong>参考文章</strong></a><br>&ensp;&ensp;&ensp;&ensp;Java 程序运行时使用的内存空间主要是堆、栈、方法区。</p><ul><li>方法区：主要存放静态数据、全局 static数据和常量。这块内存在程序编译时就已经分配好，并且在程序整个运行期间都存在。</li><li>栈区 ：当方法被执行时，方法体内的局部变量（其中包括基础数据类型、对象的引用）都在栈上创建，并在方法执行结束时这些局部变量所持有的内存将会自动被释放。因为栈内存分配运算内置于处理器的指令集中，效率很高，但是分配的内存容量有限。</li><li>堆区 ： 又称动态内存分配，通常就是指在程序运行时直接 new 出来的内存，也就是对象的实例。这部分内存在不使用时将会由 Java 垃圾回收器来负责回收。</li></ul><p><strong>Java内存管理</strong><br>&ensp;&ensp;&ensp;&ensp;Java的内存管理就是对象的分配和释放问题。Java程序分配了内存空间，内存释放由GC完成。在Java程序运行的过程中，为了能够正确释放对象，GC会监视每一个对象的状态（这也是为什么Java比C++慢吧），当判断这个对象不可达时，就会被GC回收掉。</p><p><strong>内存泄露</strong><br>&ensp;&ensp;&ensp;&ensp;GC回收的对象都是不可达的，但是如果这个对象是可达的，但是在程序中又不会被使用到，GC就无法回收，就会出现内存泄露。而在C++中因为没有GC机制，即使此对象是不可达的也无法被自动回收，不回收的话当然会出现内存泄露的情况。所以就内存泄露的范围来说，Java要比C++小。<br>&ensp;&ensp;&ensp;&ensp;C++程序员说Java程序员不懂内存管理，是因为大部分内存管理的工作JVM都替我们做了。但是我觉得有同样编码经验的初、中级C++与Java程序员，内存管理不一定有Java程序员做的好，毕竟JVM底层也是C++写的，初、中级的C++程序员是否能写出性能优于JVM的内存管理机制（我猜的，嘻嘻~）。<br>&ensp;&ensp;&ensp;&ensp;综上所述，Java是世界上最好的语言。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;因为没有系统的学习过C++，闲来无事与教研室学C++同学的同学简单聊了两句，了解了下C++，又胡思乱想了一些东西。&lt;br&gt;&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;C是面向过程的，C++也是封装、继承、多态、面向对象的与</summary>
+      
+    
+    
+    
+    <category term="随想" scheme="https://zhcloud99.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="胡思乱想" scheme="https://zhcloud99.github.io/tags/%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>关于数据类型与数据结构</title>
