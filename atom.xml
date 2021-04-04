@@ -6,7 +6,7 @@
   <link href="https://zhcloud99.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhcloud99.github.io/"/>
-  <updated>2021-04-01T02:38:06.005Z</updated>
+  <updated>2021-04-04T07:00:17.039Z</updated>
   <id>https://zhcloud99.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>存储器</title>
+    <link href="https://zhcloud99.github.io/20210404025820.html"/>
+    <id>https://zhcloud99.github.io/20210404025820.html</id>
+    <published>2021-04-04T06:58:20.000Z</published>
+    <updated>2021-04-04T07:00:17.039Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/20210404025820/clipboard.png" alt="图示"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/20210404025820/clipboard.png&quot; alt=&quot;图示&quot;&gt;&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="随想" scheme="https://zhcloud99.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="胡思乱想" scheme="https://zhcloud99.github.io/tags/%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>C++与Java内存泄露问题</title>
