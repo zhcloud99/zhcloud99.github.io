@@ -6,7 +6,7 @@
   <link href="https://zhcloud99.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhcloud99.github.io/"/>
-  <updated>2021-04-04T07:00:17.039Z</updated>
+  <updated>2021-04-07T11:16:18.015Z</updated>
   <id>https://zhcloud99.github.io/</id>
   
   <author>
@@ -17,18 +17,66 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于栈与方法调用</title>
+    <link href="https://zhcloud99.github.io/20210407071235.html"/>
+    <id>https://zhcloud99.github.io/20210407071235.html</id>
+    <published>2021-04-07T11:12:35.000Z</published>
+    <updated>2021-04-07T11:16:18.015Z</updated>
+    
+    <content type="html"><![CDATA[<p>(<strong>参考文章</strong>)[<a href="https://blog.csdn.net/Casuall/article/details/99284422]">https://blog.csdn.net/Casuall/article/details/99284422]</a></p><hr><p>&ensp;&ensp;&ensp;&ensp;栈帧也叫过程活动记录，是编译器用来实现过程/函数调用的一种数据结构。简言之，栈帧就是利用EBP（栈帧指针，请注意不是ESP）寄存器访问局部变量、参数、函数返回地址等的手段。<br>&ensp;&ensp;&ensp;&ensp;每一次函数的调用，都会在调用栈（call stack）上维护一个独立的栈帧（stack frame）。每个独立的栈帧一般包括：</p><ul><li>函数的返回地址和参数</li><li>临时变量：包括函数的非静态局部变量以及编译器自动生成的其他临时变量</li><li>函数调用的上下文<br>&ensp;&ensp;&ensp;&ensp;栈是从高地址向低地址延伸，一个函数的栈帧用EBP和ESP这两个寄存器来划定范围。EBP指向当前栈帧的底部，ESP始终指向栈帧的顶部。<br>&ensp;&ensp;&ensp;&ensp;EBP寄存器又被称为帧指针（Frame Pointer）<br>&ensp;&ensp;&ensp;&ensp;ESP寄存器又被称为栈指针（Stack Pointer）</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;(&lt;strong&gt;参考文章&lt;/strong&gt;)[&lt;a href=&quot;https://blog.csdn.net/Casuall/article/details/99284422]&quot;&gt;https://blog.csdn.net/Casuall/article/details/9</summary>
+      
+    
+    
+    
+    <category term="随想" scheme="https://zhcloud99.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="胡思乱想" scheme="https://zhcloud99.github.io/tags/%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>byte类型取值范围为什么是127到-128?</title>
+    <link href="https://zhcloud99.github.io/20210406075705.html"/>
+    <id>https://zhcloud99.github.io/20210406075705.html</id>
+    <published>2021-04-06T11:57:05.000Z</published>
+    <updated>2021-04-06T12:04:46.778Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/heixuanfenghei/article/details/80403644?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2&utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2"><strong>参考文章</strong></a><br>&ensp;&ensp;&ensp;&ensp;一个byte由八个位组成，如00000000，其中，前7位表示数值，第8位是符号位（0为正，1为负）。这样+1就是00000001，-1就是10000001。最大的正数就是01111111，即2^0+2^1+……+2^6=127；最小的负数，同理，为1 1111111，即-127。<br>&ensp;&ensp;&ensp;&ensp;到这里应该是许多人不明白的地方，为什么负数会到-128？<br>&ensp;&ensp;&ensp;&ensp;上述的描述会出现一个问题，就是0，会出现一个+0和一个-0。印度人他们规定-0为-128，这样就与计算机的补码（程序都是按补码运行的）完美的结合在一起。<br>&ensp;&ensp;&ensp;&ensp;以此类推，int，short，long都可以推出他们的取值范围。<br>&ensp;&ensp;&ensp;&ensp;根据微机原理，机器字长为n位的补码数，其真值的取值范围是-（2^（n-1））~+2^（n-1）+1），这里的取值范围可按照这个规定来计算。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/heixuanfenghei/article/details/80403644?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogComme</summary>
+      
+    
+    
+    
+    <category term="随想" scheme="https://zhcloud99.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="胡思乱想" scheme="https://zhcloud99.github.io/tags/%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
     <title>存储器</title>
     <link href="https://zhcloud99.github.io/20210404025820.html"/>
     <id>https://zhcloud99.github.io/20210404025820.html</id>
     <published>2021-04-04T06:58:20.000Z</published>
-    <updated>2021-04-04T07:00:17.039Z</updated>
+    <updated>2021-04-04T07:03:02.146Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/20210404025820/clipboard.png" alt="图示"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/20210404025820/clipboard.png"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/20210404025820/clipboard.png&quot; alt=&quot;图示&quot;&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/20210404025820/clipboard.png&quot;&gt;&lt;/p&gt;
 </summary>
       
     
