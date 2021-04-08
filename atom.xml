@@ -6,7 +6,7 @@
   <link href="https://zhcloud99.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhcloud99.github.io/"/>
-  <updated>2021-04-07T11:16:18.015Z</updated>
+  <updated>2021-04-08T06:42:17.139Z</updated>
   <id>https://zhcloud99.github.io/</id>
   
   <author>
@@ -21,14 +21,16 @@
     <link href="https://zhcloud99.github.io/20210407071235.html"/>
     <id>https://zhcloud99.github.io/20210407071235.html</id>
     <published>2021-04-07T11:12:35.000Z</published>
-    <updated>2021-04-07T11:16:18.015Z</updated>
+    <updated>2021-04-08T06:42:17.139Z</updated>
     
-    <content type="html"><![CDATA[<p>(<strong>参考文章</strong>)[<a href="https://blog.csdn.net/Casuall/article/details/99284422]">https://blog.csdn.net/Casuall/article/details/99284422]</a></p><hr><p>&ensp;&ensp;&ensp;&ensp;栈帧也叫过程活动记录，是编译器用来实现过程/函数调用的一种数据结构。简言之，栈帧就是利用EBP（栈帧指针，请注意不是ESP）寄存器访问局部变量、参数、函数返回地址等的手段。<br>&ensp;&ensp;&ensp;&ensp;每一次函数的调用，都会在调用栈（call stack）上维护一个独立的栈帧（stack frame）。每个独立的栈帧一般包括：</p><ul><li>函数的返回地址和参数</li><li>临时变量：包括函数的非静态局部变量以及编译器自动生成的其他临时变量</li><li>函数调用的上下文<br>&ensp;&ensp;&ensp;&ensp;栈是从高地址向低地址延伸，一个函数的栈帧用EBP和ESP这两个寄存器来划定范围。EBP指向当前栈帧的底部，ESP始终指向栈帧的顶部。<br>&ensp;&ensp;&ensp;&ensp;EBP寄存器又被称为帧指针（Frame Pointer）<br>&ensp;&ensp;&ensp;&ensp;ESP寄存器又被称为栈指针（Stack Pointer）</li></ul>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/Casuall/article/details/99284422"><strong>参考文章</strong></a></p><hr><p>&ensp;&ensp;&ensp;&ensp;栈帧也叫过程活动记录，是编译器用来实现过程/函数调用的一种数据结构。简言之，栈帧就是利用EBP（栈帧指针，请注意不是ESP）寄存器访问局部变量、参数、函数返回地址等的手段。<br>&ensp;&ensp;&ensp;&ensp;每一次函数的调用，都会在调用栈（call stack）上维护一个独立的栈帧（stack frame）。每个独立的栈帧一般包括：</p><ul><li>函数的返回地址和参数</li><li>临时变量：包括函数的非静态局部变量以及编译器自动生成的其他临时变量</li><li>函数调用的上下文<br>&ensp;&ensp;&ensp;&ensp;栈是从高地址向低地址延伸，一个函数的栈帧用EBP和ESP这两个寄存器来划定范围。EBP指向当前栈帧的底部，ESP始终指向栈帧的顶部。<br>&ensp;&ensp;&ensp;&ensp;EBP寄存器又被称为帧指针（Frame Pointer）<br>&ensp;&ensp;&ensp;&ensp;ESP寄存器又被称为栈指针（Stack Pointer）</li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;(&lt;strong&gt;参考文章&lt;/strong&gt;)[&lt;a href=&quot;https://blog.csdn.net/Casuall/article/details/99284422]&quot;&gt;https://blog.csdn.net/Casuall/article/details/9</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/Casuall/article/details/99284422&quot;&gt;&lt;strong&gt;参考文章&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;栈帧也叫过程活动记录</summary>
       
     
     
