@@ -6,7 +6,7 @@
   <link href="https://zhcloud99.github.io/atom.xml" rel="self"/>
   
   <link href="https://zhcloud99.github.io/"/>
-  <updated>2021-04-08T06:42:17.139Z</updated>
+  <updated>2021-04-18T01:35:20.281Z</updated>
   <id>https://zhcloud99.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Web服务器、Web应用服务器、Web容器的区别、Servlet的定义、Servlet与JDBC的区别</title>
+    <link href="https://zhcloud99.github.io/20210418093205.html"/>
+    <id>https://zhcloud99.github.io/20210418093205.html</id>
+    <published>2021-04-18T01:32:05.000Z</published>
+    <updated>2021-04-18T01:35:20.281Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>Web服务器：</strong><br>&ensp;&ensp;&ensp;&ensp;最初的Web服务器只是负责处理HTTP协议，只能发送静态页面的内容，即处理浏览器等Web客户端的请求并返回相应响应。<br>&ensp;&ensp;&ensp;&ensp;Web服务器主要包括Nginx、Apache、IIS等。</p><p><strong>Web应用服务器</strong><br>&ensp;&ensp;&ensp;&ensp;后来人们不再满足于只从互联网获取静态的资源，便出现了通过Web服务器动态获取资源的技术，例如：JSP，ASP，PHP。而JSP，ASP，PHP等动态内容需要通过Web服务器的接口交给其它程序去处理，这个程序就是Web应用服务器。<br>&ensp;&ensp;&ensp;&ensp;Web应用服务器包括TomCat、WebLogic、JBoss等。<br>&ensp;&ensp;&ensp;&ensp;Web应用服务器一般也会部分支持HTTP协议，所以Web服务器与Web应用服务器的界限并没有那么清楚，但是Web应用服务器一般都是与Web服务器配合使用的。</p><p><strong>Web容器与Servlet</strong><br>&ensp;&ensp;&ensp;&ensp;一个Web应用可以在不同的Web应用服务器中被管理、运行，所以使用java开发Web应用、生成动态Web内容，以及开发的Web应用服务器能够处理Java开发的Web应用，都必须遵守一个规范，这个规范就是Servlet。<br>&ensp;&ensp;&ensp;&ensp;Web应用服务器也可以说是一个Servlet容器。</p><p><strong>Servlet与JDBC的区别</strong><br>&ensp;&ensp;&ensp;&ensp;狭义上来说，其实Servlet与JDBC都是一套纯粹的接口。<br>&ensp;&ensp;&ensp;&ensp;对于JDBC来说，各大数据库厂商实现了JDBC接口，程序员可以使用统一的java语言连接数据库，程序员永远是调用者；对于Servlet，程序员需要根据需求去实现Servlet接口，然后客户发出相应的Servlet请求时，Web应用服务器来调用实现的Servlet功能。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;Web服务器：&lt;/strong&gt;&lt;br&gt;&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;最初的Web服务器只是负责处理HTTP协议，只能发送静态页面的内容，即处理浏览器等Web客户端的请求并返回相应响应。&lt;br&gt;&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp</summary>
+      
+    
+    
+    
+    <category term="随想" scheme="https://zhcloud99.github.io/categories/%E9%9A%8F%E6%83%B3/"/>
+    
+    
+    <category term="胡思乱想" scheme="https://zhcloud99.github.io/tags/%E8%83%A1%E6%80%9D%E4%B9%B1%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>关于栈与方法调用</title>
